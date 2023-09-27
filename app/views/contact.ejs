@@ -1,0 +1,64 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+    <!--<img src="img/logo.png" alt="logo">-->
+
+<main class="ontainer">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1>Contact Information</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p><strong>Name:</strong> Alex Carey</p>
+                        <p><strong>Address:</strong> 3233 Eglinton Avenue, Scarborough, Toronto</p>
+                        <p><strong>Mobile:</strong> 416-871-5439</p>
+                        <p><strong>Email:</strong> <a href="mailto:akhilrn3005@gmail.com">akhilrn3005@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1>Contact Form</h1>
+                    </div>
+                    <div class="panel-body">
+                        <!-- Contact form -->
+                        <form action="/contact" method="post">
+                            <div class="form-group">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactNumber">Contact Number:</label>
+                                <input type="text" class="form-control" id="contactNumber" name="contactNumber" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+
+
+
+   
